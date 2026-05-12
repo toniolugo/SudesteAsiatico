@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudeste Asiático: Cultura y Acero | Tonio Castro</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-ocean: #0a192f;
+            --text-light: #f8f9fa;
+            --card-bg: #112240;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: var(--deep-ocean);
+            color: var(--text-light);
+            line-height: 1.8;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            height: 40vh;
+            background: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), 
+                        url('https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?auto=format&fit=crop&w=1600&q=80') center/cover;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+        }
+
+        header h1 { font-family: 'Cinzel', serif; font-size: clamp(2.5rem, 8vw, 5rem); color: var(--primary-gold); }
+
+        nav {
+            background: rgba(10, 25, 47, 0.95);
+            padding: 15px; position: sticky; top: 0; z-index: 1000;
+            display: flex; justify-content: center; gap: 30px;
+            border-bottom: 1px solid var(--primary-gold);
+        }
+
+        nav a { color: var(--text-light); text-decoration: none; font-weight: 600; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; }
+
+        section { padding: 60px 10%; }
+        
+        .section-title {
+            font-family: 'Cinzel', serif; font-size: 2.5rem; color: var(--primary-gold);
+            text-align: center; margin-bottom: 40px;
+        }
+
+        .content-box {
+            background: var(--card-bg); border-radius: 15px; overflow: hidden;
+            border: 1px solid rgba(197, 160, 89, 0.2); margin-bottom: 50px;
+        }
+
+        .full-img { width: 100%; height: 500px; background: #000; }
+        .full-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        .text-padding { padding: 60px; text-align: justify; }
+        .text-padding h3 { color: var(--primary-gold); margin: 30px 0 15px 0; font-family: 'Cinzel', serif; }
+        .text-padding p { margin-bottom: 20px; font-size: 1.05rem; }
+
+        /* GRID DE ARTES MARCIALES (OPTIMIZADO SIN IMÁGENES) */
+        .grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;
+        }
+
+        .card-martial {
+            background: rgba(255,255,255,0.03); padding: 30px;
+            border-radius: 10px; border: 1px solid rgba(197, 160, 89, 0.1);
+            transition: var(--transition);
+            display: flex; flex-direction: column; justify-content: space-between;
+        }
+
+        .card-martial:hover {
+            background: rgba(255,255,255,0.07);
+            border-color: var(--primary-gold);
+            transform: translateY(-5px);
+        }
+
+        .card-martial .country-tag {
+            font-size: 0.7rem; color: var(--primary-gold); text-transform: uppercase;
+            letter-spacing: 2px; margin-bottom: 10px; font-weight: bold;
+        }
+
+        .card-martial h3 { color: var(--text-light); margin-bottom: 15px; font-family: 'Cinzel', serif; font-size: 1.2rem; }
+        .card-martial p { font-size: 0.9rem; margin-bottom: 20px; opacity: 0.85; line-height: 1.5; }
+
+        .btn {
+            display: inline-block; padding: 10px 20px;
+            border: 1px solid var(--primary-gold); color: var(--primary-gold);
+            text-decoration: none; font-size: 0.75rem; transition: 0.3s;
+            text-transform: uppercase; font-weight: bold; text-align: center;
+        }
+
+        .btn:hover { background: var(--primary-gold); color: var(--deep-ocean); }
+
+        footer { padding: 30px 5%; text-align: right; background: #020c1b; border-top: 1px solid var(--primary-gold); }
+        .signature { font-size: 0.75rem; color: rgba(248, 249, 250, 0.5); letter-spacing: 1px; }
+
+        @media (max-width: 768px) { section { padding: 40px 5%; } .full-img { height: 250px; } .text-padding { padding: 30px; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sudeste Asiático</h1>
+        <p>Cultura y Tradiciones Milenarias</p>
+    </header>
+
+    <nav>
+        <a href="#cultura">Cultura</a>
+        <a href="#marciales">Artes Marciales</a>
+    </nav>
+
+    <section id="cultura">
+        <h2 class="section-title">Inmersión Cultural Profunda</h2>
+        <div class="content-box">
+            <div class="full-img">
+                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200" 
+                     alt="Templo y Cultura Sudeste Asiático" 
+                     onerror="this.src='https://loremflickr.com/1200/600/southeastasia,culture'">
+            </div>
+            <div class="text-padding">
+                <h3>El Crisol de Civilizaciones</h3>
+                <p>La cultura del Sudeste Asiático representa uno de los sincretismos más complejos y fascinantes de la historia humana. Situada geográficamente en la encrucijada de las grandes rutas marítimas entre India y China, la región ha actuado como una esponja cultural durante milenios. Esta identidad no es monolítica, sino un tapiz vibrante tejido con hilos de creencias animistas indígenas que sobrevivieron y se fusionaron con la expansión del hinduismo, el budismo Theravada y Mahayana, y posteriormente la influencia del islam y el cristianismo. Esta mezcla ha dado lugar a una cosmovisión única donde lo sagrado y lo profano se entrelazan en cada aspecto de la vida cotidiana.</p>
+                
+                <p>En el corazón de esta estructura social se encuentra el concepto de "armonía cósmica". En naciones como Indonesia, esta filosofía se manifiesta a través del "Gotong Royong", una tradición de ayuda mutua que define la organización de las aldeas. No es solo un sistema de trabajo cooperativo para la cosecha de arroz, sino una columna vertebral ética que prioriza el consenso y el bienestar colectivo sobre el individualismo. Esta resiliencia comunitaria ha permitido que las sociedades del sudeste asiático mantengan sus raíces a pesar de las presiones de la globalización moderna.</p>
+
+                <h3>Arquitectura y Simbolismo Sagrado</h3>
+                <p>La arquitectura de la región no es simplemente una cuestión de estética, sino una representación física del orden del universo. Las majestuosas estructuras de Angkor Wat en Camboya o el complejo de Borobudur en Java son, en esencia, mandalas tridimensionales grabados en piedra. Estas edificaciones actúan como réplicas del Monte Meru, el eje central de la cosmogonía hindú y budista. Cada bajorrelieve cuenta una historia épica, desde las enseñanzas morales de los Jataka hasta las batallas del Ramayana, sirviendo como bibliotecas visuales para una población que halló en la piedra la guía espiritual necesaria para alcanzar la iluminación.</p>
+                
+                <p>Incluso en las viviendas tradicionales, como las casas <em>Joglo</em> de Java o las <em>Longhouses</em> de Borneo, el diseño responde a una geografía espiritual. La orientación de las casas, la altura de los techos y el uso de materiales naturales como el bambú y la teca no solo son respuestas inteligentes al clima tropical, sino que protegen a los habitantes de los espíritus malignos y fomentan la conexión con los ancestros. El hogar es visto como un organismo vivo que respira en sincronía con el entorno.</p>
+
+                <h3>Arte, Rituales y Expresión Etérea</h3>
+                <p>El arte en el sudeste asiático es intrínsecamente ritual. El teatro de sombras, o <em>Wayang Kulit</em>, trasciende el entretenimiento para convertirse en una ceremonia de mediación espiritual. El "Dalang" (maestro titiritero) es visto como un chamán que, mediante la manipulación de figuras de cuero y la modulación de su voz, invoca la sabiduría ancestral para resolver conflictos contemporáneos. Del mismo modo, las danzas tradicionales tailandesas y balinesas utilizan movimientos hipnóticos de los dedos y los ojos para comunicar estados mentales y divinos que las palabras no pueden alcanzar.</p>
+                
+                <p>Esta riqueza se extiende a la artesanía, donde el <em>Batik</em> indonesio —reconocido como Patrimonio de la Humanidad— utiliza patrones geométricos y simbólicos para indicar el estatus social y la procedencia de quien lo porta. Cada color y cada línea en la tela es una oración tejida. En conjunto, el sudeste asiático celebra una existencia donde la hospitalidad, el respeto absoluto por los ancianos y la gratitud hacia la tierra son los pilares inamovibles. Es una región que mira hacia el futuro con tecnología puntera en sus ciudades, pero que guarda en su alma el susurro de los bosques, el incienso de sus templos y el ritmo eterno del gamelán.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="marciales">
+        <h2 class="section-title">Principales Artes Marciales</h2>
+        <div class="grid">
+            
+            <!-- Filipinas -->
+            <div class="card-martial">
+                <div>
+                    <div class="country-tag">Filipinas</div>
+                    <h3>Kali / Eskrima / Arnis</h3>
+                    <p>Sistemas de combate con armas (bastón, cuchillo) y manos vacías. Altamente fluido y práctico.</p>
+                </div>
+                <a href="https://es.wikipedia.org/wiki/Arnis" target="_blank" class="btn">Saber más</a>
+            </div>
+
+            <div class="card-martial">
+                <div>
+                    <div class="country-tag">Filipinas</div>
+                    <h3>Panantukan</h3>
+                    <p>Boxeo filipino "sucio" o de defensa personal. Utiliza todas las partes del cuerpo como herramientas.</p>
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Panantukan" target="_blank" class="btn">Saber más</a>
+            </div>
+
+            <!-- Tailandia -->
+            <div class="card-martial">
+                <div>
+                    <div class="country-tag">Tailandia</div>
+                    <h3>Muay Thai</h3>
+                    <p>El "arte de las 8 extremidades". Combina el uso de puños, codos, rodillas y espinillas.</p>
+                </div>
+                <a href="https://es.wikipedia.org/wiki/Muay_thai" target="_blank" class="btn">Saber más</a>
+            </div>
+
+            <div class="card-martial">
+                <div>
+                    <div class="country-tag">Tailandia</div>
+                    <h3>Krabi Krabong</h3>
+                    <p>Arte tradicional tailandés basado en armas, precursor histórico del Muay Thai moderno.</p>
+                </div>
+                <a href="https://es.wikipedia.org/wiki/Krabi_krabong" target="_blank" class="btn">Saber más</a>
+            </div>
+
+            <!-- Indonesia/Malasia/Brunei -->
+            <div class="card-martial">
+                <div>
+                    <div class="country-tag">Indonesia / Malasia</div>
+                    <h3>Pencak Silat</h3>
+                    <p>Amplio sistema que combina movimientos fluidos, uso de armas y una fuerte carga espiritual.</p>
+                </div>
+                <a href="https://ich.unesco.org/es/RL/el-pencak-silat-01391" target="_blank" class="btn">Saber más</a>
+            </div>
+
+            <!-- Birmania -->
+            <div class="card-martial">
+                <div>
+                    <div class="country-tag">Birmania (Myanmar)</div>
+                    <h3>Lethwei</h3>
+                    <p>Boxeo birmano extremo. Permite golpes con la cabeza y se lucha típicamente sin guantes.</p>
+                </div>
+                <a href="https://es.wikipedia.org/wiki/Lethwei" target="_blank" class="btn">Saber más</a>
+            </div>
+
+            <div class="card-martial">
+                <div>
+                    <div class="country-tag">Birmania (Myanmar)</div>
+                    <h3>Bando</h3>
+                    <p>Estilo de defensa personal defensivo que utiliza técnicas de agarre y golpeo de forma equilibrada.</p>
+                </div>
+                <a href="https://es.wikipedia.org/wiki/Bando" target="_blank" class="btn">Saber más</a>
+            </div>
+
+            <!-- Camboya/Laos -->
+            <div class="card-martial">
+                <div>
+                    <div class="country-tag">Camboya / Laos</div>
+                    <h3>Kun Khmer / Pradal Serey</h3>
+                    <p>Estilo camboyano similar al Muay Thai, con un énfasis técnico muy marcado en el uso del codo.</p>
+                </div>
+                <a href="https://es.wikipedia.org/wiki/Kun_Khmer" target="_blank" class="btn">Saber más</a>
+            </div>
+
+            <div class="card-martial">
+                <div>
+                    <div class="country-tag">Camboya / Malasia</div>
+                    <h3>Tomoi</h3>
+                    <p>Arte de lucha regional similar al boxeo tailandés practicado en el norte de Malasia y sur de Tailandia.</p>
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Tomoi" target="_blank" class="btn">Saber más</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p class="signature">Tonio Castro</p>
+    </footer>
+
+</body>
+</html>
